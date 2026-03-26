@@ -41,6 +41,10 @@ The full cheat sheet baked into a skill. Every slash command, keyboard shortcut,
 
 Follows the [Agent Skills](https://agentskills.io) standard. Works across Claude Code, Cursor, Copilot, Gemini CLI, and any other compatible tool.
 
+## Credit
+
+Based on the [Claude Code Cheat Sheet](https://cc.storyfox.cz/) by [@phasE89](https://x.com/phasE89).
+
 ## License
 
 MIT
