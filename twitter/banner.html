@@ -1,0 +1,192 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;width:1200px;overflow:hidden;background:#080810}
+
+/* === BANNER 1: Hero === */
+#banner-1{width:1200px;height:675px;background:#080810;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+
+#banner-1 .grid{position:absolute;inset:0;opacity:0.03;background-image:
+  linear-gradient(rgba(251,146,60,0.5) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(251,146,60,0.5) 1px,transparent 1px);
+  background-size:40px 40px}
+
+#banner-1 .glow{position:absolute;width:600px;height:600px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(251,146,60,0.06) 0%,transparent 60%)}
+
+#banner-1 .corner{position:absolute;width:50px;height:50px}
+#banner-1 .c-tl{top:20px;left:20px;border-top:2px solid rgba(251,146,60,0.25);border-left:2px solid rgba(251,146,60,0.25)}
+#banner-1 .c-tr{top:20px;right:20px;border-top:2px solid rgba(251,146,60,0.25);border-right:2px solid rgba(251,146,60,0.25)}
+#banner-1 .c-bl{bottom:20px;left:20px;border-bottom:2px solid rgba(251,146,60,0.25);border-left:2px solid rgba(251,146,60,0.25)}
+#banner-1 .c-br{bottom:20px;right:20px;border-bottom:2px solid rgba(251,146,60,0.25);border-right:2px solid rgba(251,146,60,0.25)}
+
+#banner-1 .stripe-top{position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,rgba(251,146,60,0.4),rgba(251,146,60,0.6),rgba(251,146,60,0.4),transparent)}
+#banner-1 .stripe-bottom{position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,rgba(251,146,60,0.4),rgba(251,146,60,0.6),rgba(251,146,60,0.4),transparent)}
+
+#banner-1 .content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:20px}
+
+#banner-1 .icon-row{display:flex;align-items:center;gap:14px}
+#banner-1 .icon-box{width:56px;height:56px;border:1.5px solid rgba(251,146,60,0.3);border-radius:14px;display:flex;align-items:center;justify-content:center;background:rgba(251,146,60,0.04)}
+
+#banner-1 .title{font-family:'JetBrains Mono',monospace;font-size:52px;font-weight:700;letter-spacing:0.06em;color:#f1f1f1}
+#banner-1 .title .accent{color:#fb923c}
+
+#banner-1 .subtitle{font-size:18px;color:rgba(200,200,210,0.55);text-align:center;line-height:1.6;max-width:600px}
+
+#banner-1 .install{font-family:'JetBrains Mono',monospace;font-size:15px;padding:12px 28px;border:1px solid rgba(251,146,60,0.2);border-radius:8px;color:rgba(251,146,60,0.8);background:rgba(251,146,60,0.04);letter-spacing:0.02em;margin-top:8px}
+#banner-1 .install .dim{color:rgba(251,146,60,0.4)}
+
+#banner-1 .pills{display:flex;gap:8px;margin-top:4px;flex-wrap:wrap;justify-content:center}
+#banner-1 .pill{font-family:'JetBrains Mono',monospace;font-size:11px;padding:5px 12px;border:1px solid rgba(255,255,255,0.06);border-radius:6px;color:rgba(200,200,210,0.35);background:rgba(255,255,255,0.02);letter-spacing:0.03em}
+
+#banner-1 .tag{position:absolute;bottom:28px;font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(200,200,210,0.2);letter-spacing:0.08em}
+
+/* === BANNER 2: Explainer === */
+#banner-2{width:1200px;height:675px;background:#080810;position:relative;overflow:hidden;display:flex;align-items:center;padding:0 70px;gap:50px}
+
+#banner-2 .grid{position:absolute;inset:0;opacity:0.025;background-image:
+  linear-gradient(rgba(255,255,255,0.3) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,0.3) 1px,transparent 1px);
+  background-size:40px 40px}
+
+/* Left side: text */
+#banner-2 .left{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;gap:28px}
+
+#banner-2 .label{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(251,146,60,0.5)}
+
+#banner-2 .heading{font-size:32px;font-weight:700;color:#f1f1f1;line-height:1.3}
+#banner-2 .heading .accent{color:#fb923c}
+
+#banner-2 .steps{display:flex;flex-direction:column;gap:16px}
+#banner-2 .step{display:flex;align-items:flex-start;gap:14px}
+#banner-2 .step-num{font-family:'JetBrains Mono',monospace;font-size:13px;color:rgba(251,146,60,0.5);min-width:24px;padding-top:2px}
+#banner-2 .step-text{font-size:15px;color:rgba(200,200,210,0.6);line-height:1.5}
+#banner-2 .step-text code{font-family:'JetBrains Mono',monospace;font-size:13px;color:rgba(251,146,60,0.7);background:rgba(251,146,60,0.06);padding:2px 7px;border-radius:4px;border:1px solid rgba(251,146,60,0.1)}
+
+/* Right side: terminal mockup */
+#banner-2 .right{position:relative;z-index:2;width:480px}
+#banner-2 .terminal{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:12px;overflow:hidden}
+#banner-2 .term-header{display:flex;align-items:center;gap:8px;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,0.04)}
+#banner-2 .dot{width:10px;height:10px;border-radius:50%}
+#banner-2 .dot-r{background:rgba(239,68,68,0.5)}
+#banner-2 .dot-y{background:rgba(250,204,21,0.5)}
+#banner-2 .dot-g{background:rgba(34,197,94,0.5)}
+#banner-2 .term-title{font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(200,200,210,0.25);margin-left:8px}
+#banner-2 .term-body{padding:20px;display:flex;flex-direction:column;gap:14px}
+#banner-2 .term-line{font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.6}
+#banner-2 .prompt{color:rgba(34,197,94,0.5)}
+#banner-2 .cmd{color:rgba(200,200,210,0.7)}
+#banner-2 .output{color:rgba(200,200,210,0.35);font-size:12px}
+#banner-2 .highlight{color:rgba(251,146,60,0.7)}
+
+#banner-2 .bottom{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(200,200,210,0.18);letter-spacing:0.08em}
+</style></head><body>
+
+<!-- BANNER 1: Hero -->
+<div id="banner-1">
+  <div class="grid"></div>
+  <div class="glow"></div>
+  <div class="stripe-top"></div>
+  <div class="stripe-bottom"></div>
+  <div class="corner c-tl"></div>
+  <div class="corner c-tr"></div>
+  <div class="corner c-bl"></div>
+  <div class="corner c-br"></div>
+
+  <div class="content">
+    <div class="icon-row">
+      <div class="icon-box">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+          <path d="M9 7h6M9 11h4"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="title">CLAUDE CODE <span class="accent">CHEATSHEET</span></div>
+
+    <div class="subtitle">
+      The entire cheat sheet, turned into a skill.<br>
+      Ask what you want to do. Get the exact command.
+    </div>
+
+    <div class="install"><span class="dim">$</span> npx skills add jcdentonintheflesh/claude-code-cheatsheet</div>
+
+    <div class="pills">
+      <div class="pill">Claude Code</div>
+      <div class="pill">Cursor</div>
+      <div class="pill">Copilot</div>
+      <div class="pill">Gemini CLI</div>
+      <div class="pill">30+ tools</div>
+    </div>
+  </div>
+
+  <div class="tag">github.com/jcdentonintheflesh/claude-code-cheatsheet</div>
+</div>
+
+<!-- BANNER 2: Explainer -->
+<div id="banner-2">
+  <div class="grid"></div>
+
+  <div class="left">
+    <div class="label">How it works</div>
+    <div class="heading">Stop googling commands.<br>Just ask <span class="accent">/guide</span></div>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">01</span>
+        <span class="step-text">Install with one command:<br><code>npx skills add jcdentonintheflesh/claude-code-cheatsheet</code></span>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <span class="step-text">Type <code>/guide</code> + what you want to do<br>in plain english</span>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <span class="step-text">Get the exact command, shortcut, or workflow.<br>No more guessing.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="terminal">
+      <div class="term-header">
+        <div class="dot dot-r"></div>
+        <div class="dot dot-y"></div>
+        <div class="dot dot-g"></div>
+        <div class="term-title">claude</div>
+      </div>
+      <div class="term-body">
+        <div class="term-line">
+          <span class="prompt">$</span> <span class="highlight">/guide</span> <span class="cmd">how do I undo a change</span>
+        </div>
+        <div class="term-line output">
+          Press Esc Esc to undo the last change<br>
+          Claude made. To go back further, use<br>
+          /rewind to step through changes.
+        </div>
+        <div class="term-line" style="margin-top:6px">
+          <span class="prompt">$</span> <span class="highlight">/guide</span> <span class="cmd">plan mode</span>
+        </div>
+        <div class="term-line output">
+          /plan [description] to have Claude plan<br>
+          before writing code. Press Tab to cycle<br>
+          permission modes: Normal → Auto → Plan
+        </div>
+        <div class="term-line" style="margin-top:6px">
+          <span class="prompt">$</span> <span class="highlight">/guide</span> <span class="cmd">make it faster</span>
+        </div>
+        <div class="term-line output">
+          /fast on for faster output (same model).<br>
+          /effort low for simpler tasks.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">based on the claude code cheat sheet · works with any agent skills compatible tool</div>
+</div>
+
+</body></html>

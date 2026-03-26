@@ -1,13 +1,21 @@
-# claude-code-guide
+<p align="center">
+  <img src="twitter/banner.png" alt="Claude Code Cheatsheet" width="800">
+</p>
 
-A skill that teaches you Claude Code while you use it. Ask what you want to do in plain english, get the exact command.
+# claude-code-cheatsheet
 
-Claude Code is crazy powerful but most people only use 10% of it because the surface area is huge and the docs are dense. This skill gives your agent the full reference so it actually guides you correctly instead of hallucinating commands that don't exist.
+The [Claude Code cheat sheet](https://x.com/jcdentonthefres), turned into a skill you can install in one line.
+
+Ask what you want to do in plain english. Get the exact command. No more googling, no more guessing, no more Claude hallucinating commands that don't exist.
+
+<p align="center">
+  <img src="twitter/explainer.png" alt="How it works" width="800">
+</p>
 
 ## Install
 
 ```bash
-npx skills add jcdentonintheflesh/claude-code-guide
+npx skills add jcdentonintheflesh/claude-code-cheatsheet
 ```
 
 That's it. Now you have `/guide`.
@@ -23,21 +31,15 @@ That's it. Now you have `/guide`.
 /guide undo                         fix a mistake
 ```
 
-It also kicks in automatically when you ask "how do I..." questions about Claude Code.
+Also kicks in automatically when you ask "how do I..." questions about Claude Code.
 
-## What it covers
+## What's in it
 
-- Every slash command, keyboard shortcut, and CLI flag
-- Git workflows (commits, PRs, branches)
-- Plan mode, worktrees, background tasks
-- Context management and performance
-- Config files, env vars, permissions
-- MCP servers, hooks, voice mode, scheduled tasks
-- Troubleshooting common problems
+The full cheat sheet baked into a skill. Every slash command, keyboard shortcut, CLI flag, workflow, config option, and troubleshooting tip. Instead of staring at a giant image trying to find what you need, just ask.
 
 ## Works with
 
-This follows the [Agent Skills](https://agentskills.io) standard so it works across Claude Code, Cursor, Copilot, Gemini CLI, and other compatible tools.
+Follows the [Agent Skills](https://agentskills.io) standard. Works across Claude Code, Cursor, Copilot, Gemini CLI, and any other compatible tool.
 
 ## License
 
