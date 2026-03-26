@@ -4,7 +4,7 @@
 
 # claude-code-cheatsheet
 
-The [Claude Code cheat sheet](https://x.com/jcdentonthefres), turned into a skill you can install in one line.
+The [Claude Code cheat sheet](https://cc.storyfox.cz/), turned into a skill you can install in one line.
 
 Ask what you want to do in plain english. Get the exact command. No more googling, no more guessing, no more Claude hallucinating commands that don't exist.
 
